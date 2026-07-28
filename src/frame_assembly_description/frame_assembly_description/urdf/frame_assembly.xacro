@@ -1,0 +1,4159 @@
+<?xml version="1.0" ?>
+<robot name="frame_assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find frame_assembly_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find frame_assembly_description)/urdf/frame_assembly.ros2control" />
+<xacro:include filename="$(find frame_assembly_description)/urdf/frame_assembly.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="4.325475957658556e-14 -0.04199988865694342 0.006000111609062524" rpy="0 0 0"/>
+    <mass value="176.62499999999994"/>
+    <inertia ixx="33.118659" iyy="33.118659" izz="66.234375" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2148_1">
+  <inertial>
+    <origin xyz="6.357170180050736e-13 -0.06449988865693587 0.15250011160991947" rpy="0 0 0"/>
+    <mass value="7.179885034348113"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2148_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2148_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2014_1">
+  <inertial>
+    <origin xyz="0.3111055820540159 -0.07137897869477604 0.17650011160906331" rpy="0 0 0"/>
+    <mass value="18.57347066109485"/>
+    <inertia ixx="2.48839" iyy="0.595987" izz="3.084349" ixy="0.000563" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2014_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2014_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2137_1">
+  <inertial>
+    <origin xyz="0.3137500000000461 -0.04199988865753629 0.15250011160991903" rpy="0 0 0"/>
+    <mass value="3.419691768199286"/>
+    <inertia ixx="0.001318" iyy="0.097352" izz="0.097352" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2137_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2137_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2029_1">
+  <inertial>
+    <origin xyz="-0.31110431722004184 -0.07145355669111172 0.17650011160906176" rpy="0 0 0"/>
+    <mass value="18.573389799122634"/>
+    <inertia ixx="2.491403" iyy="0.59598" izz="3.087355" ixy="-0.000101" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2029_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2029_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2136_1">
+  <inertial>
+    <origin xyz="-0.31374999999994985 -0.04199988865753329 0.15250011160991273" rpy="0 0 0"/>
+    <mass value="3.4196917681994474"/>
+    <inertia ixx="0.001318" iyy="0.097352" izz="0.097352" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2136_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2136_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2151_1">
+  <inertial>
+    <origin xyz="-0.6274999999993736 -0.06449988865693382 0.15250011160991944" rpy="0 0 0"/>
+    <mass value="7.179885034348306"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2151_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2151_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2122_1">
+  <inertial>
+    <origin xyz="-0.626399999999958 -0.06729988865694203 0.45970011160906055" rpy="0 0 0"/>
+    <mass value="35.26847999999973"/>
+    <inertia ixx="5.635621" iyy="1.05816" izz="4.577672" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2122_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2122_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2156_1">
+  <inertial>
+    <origin xyz="-0.627499999999358 -0.06449988865693346 0.7725001116099064" rpy="0 0 0"/>
+    <mass value="7.179885034348515"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2156_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2156_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2138_1">
+  <inertial>
+    <origin xyz="-0.3874999999999648 -0.057999888657534165 0.7725001116099299" rpy="0 0 0"/>
+    <mass value="2.5537612346209553"/>
+    <inertia ixx="0.000984" iyy="0.040762" izz="0.040762" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2138_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2138_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2146_1">
+  <inertial>
+    <origin xyz="-0.14749999999936692 -0.06449988865693124 0.7725001116082023" rpy="0 0 0"/>
+    <mass value="7.179885034348435"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2146_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2146_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="nase_nut_1_1">
+  <inertial>
+    <origin xyz="-0.07499999999995924 -0.13299988865694354 0.7832376276127998" rpy="0 0 0"/>
+    <mass value="0.011856260094866598"/>
+    <inertia ixx="0.0" iyy="0.0" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/nase_nut_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/nase_nut_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_screw_1_1">
+  <inertial>
+    <origin xyz="-0.07500000000017348 -0.13299988865690826 0.7905001116090625" rpy="0 0 0"/>
+    <mass value="0.00867005941312944"/>
+    <inertia ixx="0.0" iyy="0.0" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_screw_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_screw_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2118_1">
+  <inertial>
+    <origin xyz="5.0410340673198727e-08 -0.05799973934103267 0.7844062735596016" rpy="0 0 0"/>
+    <mass value="2.345429467160023"/>
+    <inertia ixx="0.016932" iyy="0.016932" izz="0.03301" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2118_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2118_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_nut_2_1">
+  <inertial>
+    <origin xyz="0.07500000000028 -0.13299988865691487 0.7866235637004412" rpy="0 0 0"/>
+    <mass value="0.005483112159289514"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_nut_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/base_nut_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2007_1">
+  <inertial>
+    <origin xyz="0.07499999999987683 -0.13299988865691256 0.7912001116090626" rpy="0 0 0"/>
+    <mass value="0.0018292915968804422"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2007_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2007_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2145_1">
+  <inertial>
+    <origin xyz="0.14750000000063312 -0.06449988865693528 0.772500111609912" rpy="0 0 0"/>
+    <mass value="7.179885034347931"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2145_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2145_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2139_1">
+  <inertial>
+    <origin xyz="0.38750000000005014 -0.0579998886575362 0.7725001116099309" rpy="0 0 0"/>
+    <mass value="2.5537612346209597"/>
+    <inertia ixx="0.000984" iyy="0.040762" izz="0.040762" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2139_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2139_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2155_1">
+  <inertial>
+    <origin xyz="0.6274999999994452 -0.0644998886569432 0.7725001116099142" rpy="0 0 0"/>
+    <mass value="7.17988503434882"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2155_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2155_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2017_1">
+  <inertial>
+    <origin xyz="4.0832630502553105e-14 -0.38189006478143567 0.7965001116090624" rpy="0 0 0"/>
+    <mass value="19.806863643320845"/>
+    <inertia ixx="0.692491" iyy="2.771295" izz="3.463756" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2017_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2017_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2121_1">
+  <inertial>
+    <origin xyz="0.6264000000000423 -0.06729988865694489 0.45970011160906366" rpy="0 0 0"/>
+    <mass value="35.26847999999972"/>
+    <inertia ixx="5.635621" iyy="1.05816" izz="4.577672" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2121_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2121_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2150_1">
+  <inertial>
+    <origin xyz="0.6274999999994617 -0.06449988865694614 0.1525001116099216" rpy="0 0 0"/>
+    <mass value="7.179885034348528"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2150_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2150_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2135_1">
+  <inertial>
+    <origin xyz="4.228960497019625e-14 0.26552452863100634 0.7965001116090624" rpy="0 0 0"/>
+    <mass value="19.772758658817416"/>
+    <inertia ixx="0.690014" iyy="2.757945" izz="3.447929" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2135_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2135_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2154_1">
+  <inertial>
+    <origin xyz="4.25342799966181e-14 0.5695001113424591 0.7725001116099095" rpy="0 0 0"/>
+    <mass value="7.103565733084269"/>
+    <inertia ixx="0.002737" iyy="0.868063" izz="0.868063" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2154_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2154_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2147_1">
+  <inertial>
+    <origin xyz="6.318200820621981e-13 0.5695001113438987 0.4625001116090404" rpy="0 0 0"/>
+    <mass value="3.375661402084847"/>
+    <inertia ixx="0.093657" iyy="0.093657" izz="0.001301" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2147_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2147_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2149_1">
+  <inertial>
+    <origin xyz="4.132820400427696e-14 0.569500111342447 0.15250011160991347" rpy="0 0 0"/>
+    <mass value="7.1035657330840065"/>
+    <inertia ixx="0.002737" iyy="0.868063" izz="0.868063" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2149_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2149_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2119_1">
+  <inertial>
+    <origin xyz="0.31120000000004316 0.568400111343056 0.4597001116090631" rpy="0 0 0"/>
+    <mass value="17.1820800000007"/>
+    <inertia ixx="0.515514" iyy="1.044762" izz="0.529351" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2119_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2119_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2153_1">
+  <inertial>
+    <origin xyz="0.6275000000006484 0.5695001113422098 0.4625001116090744" rpy="0 0 0"/>
+    <mass value="3.904025795455133"/>
+    <inertia ixx="0.144624" iyy="0.144624" izz="0.001504" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2153_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2153_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2120_1">
+  <inertial>
+    <origin xyz="-0.316299999999957 0.568400111343057 0.45970011160906155" rpy="0 0 0"/>
+    <mass value="17.18208000000065"/>
+    <inertia ixx="0.515514" iyy="1.044762" izz="0.529351" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2120_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2120_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2152_1">
+  <inertial>
+    <origin xyz="-0.6274999999993897 0.5695001113422272 0.4625001116090815" rpy="0 0 0"/>
+    <mass value="3.904025795455369"/>
+    <inertia ixx="0.144624" iyy="0.144624" izz="0.001504" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2152_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2152_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2141_1">
+  <inertial>
+    <origin xyz="3.9198484893560167e-14 -0.6932651076937172 0.7725001116123714" rpy="0 0 0"/>
+    <mass value="5.638992296266011"/>
+    <inertia ixx="0.001621" iyy="0.688996" izz="0.688633" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2141_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2141_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2117_1">
+  <inertial>
+    <origin xyz="-0.022500011002107422 -0.6975710233186309 0.8044689851876319" rpy="0 0 0"/>
+    <mass value="0.05790676296674886"/>
+    <inertia ixx="2e-06" iyy="7e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2117_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2117_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2109_1">
+  <inertial>
+    <origin xyz="-0.02249999999990985 -0.7075104172741298 0.8062251116090623" rpy="0 0 0"/>
+    <mass value="0.0028449557241090576"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2109_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2109_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2116_1">
+  <inertial>
+    <origin xyz="0.02249998899789258 -0.6975710233186311 0.8044689851876319" rpy="0 0 0"/>
+    <mass value="0.05790676296674929"/>
+    <inertia ixx="2e-06" iyy="7e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2116_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2116_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2108_1">
+  <inertial>
+    <origin xyz="0.022500000000090194 -0.7075104172741298 0.8062251116090624" rpy="0 0 0"/>
+    <mass value="0.0028449557241090515"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2108_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2108_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2110_1">
+  <inertial>
+    <origin xyz="0.02896887791827923 -0.697571009669647 0.7000001465172352" rpy="0 0 0"/>
+    <mass value="0.057906668561593495"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2110_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2110_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2102_1">
+  <inertial>
+    <origin xyz="0.03072499998518471 -0.7075104172613209 0.7000001116238629" rpy="0 0 0"/>
+    <mass value="0.002844955724109878"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2102_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2102_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2112_1">
+  <inertial>
+    <origin xyz="-0.02896886358769598 -0.6975710163800609 0.700000111622743" rpy="0 0 0"/>
+    <mass value="0.05790635072809067"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2112_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2112_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2104_1">
+  <inertial>
+    <origin xyz="-0.03072499999996019 -0.7075104172613187 0.7000001116239661" rpy="0 0 0"/>
+    <mass value="0.0028449557241090693"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2104_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2104_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2026_1">
+  <inertial>
+    <origin xyz="-0.03250000000000303 -0.7120199629589433 0.5140001116089903" rpy="0 0 0"/>
+    <mass value="0.012247422175082885"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2026_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2026_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2024_1">
+  <inertial>
+    <origin xyz="-0.032499999999956015 -0.7041214843202624 0.5140001116089381" rpy="0 0 0"/>
+    <mass value="0.004589184942103659"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2024_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2024_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2140_1">
+  <inertial>
+    <origin xyz="-1.149626365985793e-11 -0.6932651076937175 0.4625001116164846" rpy="0 0 0"/>
+    <mass value="2.6796864217826686"/>
+    <inertia ixx="0.07413" iyy="0.074302" izz="0.00077" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2140_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2140_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2028_1">
+  <inertial>
+    <origin xyz="-0.03250198260095048 -0.7358605207096496 0.45551346173315843" rpy="0 0 0"/>
+    <mass value="0.3342389131514293"/>
+    <inertia ixx="0.000733" iyy="0.000691" izz="8.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2028_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2028_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2027_1">
+  <inertial>
+    <origin xyz="0.032498017399052365 -0.7358605207096929 0.4555134617331851" rpy="0 0 0"/>
+    <mass value="0.3342389131514228"/>
+    <inertia ixx="0.000733" iyy="0.000691" izz="8.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2027_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2027_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2025_1">
+  <inertial>
+    <origin xyz="-0.032499999999999946 -0.7120199629589429 0.3970001116089886" rpy="0 0 0"/>
+    <mass value="0.012247422175082059"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2025_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2025_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2023_1">
+  <inertial>
+    <origin xyz="-0.03249999999995932 -0.7041214843202626 0.3970001116089377" rpy="0 0 0"/>
+    <mass value="0.004589184942103708"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2023_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2023_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2105_1">
+  <inertial>
+    <origin xyz="-0.030724999999958993 -0.7075104172613187 0.225000111594264" rpy="0 0 0"/>
+    <mass value="0.002844955724109066"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2105_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2105_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2113_1">
+  <inertial>
+    <origin xyz="-0.02896886358769478 -0.6975710163800606 0.22500011159304104" rpy="0 0 0"/>
+    <mass value="0.057906350728090555"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2113_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2113_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2111_1">
+  <inertial>
+    <origin xyz="0.02896887329501187 -0.6975709850589052 0.22500012917418935" rpy="0 0 0"/>
+    <mass value="0.05790673366671923"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2111_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2111_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2103_1">
+  <inertial>
+    <origin xyz="0.030724999985185856 -0.7075104172613189 0.2250001115941624" rpy="0 0 0"/>
+    <mass value="0.002844955724109897"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2103_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2103_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2142_1">
+  <inertial>
+    <origin xyz="3.9401061042883457e-14 -0.6932651076937245 0.152500111597526" rpy="0 0 0"/>
+    <mass value="5.638992296265644"/>
+    <inertia ixx="0.001621" iyy="0.688996" izz="0.688633" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2142_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2142_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2030_1">
+  <inertial>
+    <origin xyz="0.32596589492583433 -0.7094998886441521 0.45000011160906306" rpy="0 0 0"/>
+    <mass value="9.747255906340932"/>
+    <inertia ixx="0.332656" iyy="0.672427" izz="0.339785" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2030_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2030_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2031_1">
+  <inertial>
+    <origin xyz="-0.32596589492574 -0.7094998886441555 0.4500001116090623" rpy="0 0 0"/>
+    <mass value="9.747255906340866"/>
+    <inertia ixx="0.332656" iyy="0.672427" izz="0.339785" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2031_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2031_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2143_1">
+  <inertial>
+    <origin xyz="0.6275000000033478 -0.6932651076937161 0.46250011160905324" rpy="0 0 0"/>
+    <mass value="3.099115600764597"/>
+    <inertia ixx="0.114554" iyy="0.114754" izz="0.000891" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2143_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2143_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2059_1">
+  <inertial>
+    <origin xyz="0.6640000031628088 -0.724999874319926 0.6967001227705513" rpy="0 0 0"/>
+    <mass value="0.0033323855024331747"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2059_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2059_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2058_1">
+  <inertial>
+    <origin xyz="0.6639999998749156 -0.7249998901194931 0.7102001102588882" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2058_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2058_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2095_1">
+  <inertial>
+    <origin xyz="0.6640000000000397 -0.7249998886441893 0.7102001116090652" rpy="0 0 0"/>
+    <mass value="0.009534474363757752"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2095_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2095_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2057_1">
+  <inertial>
+    <origin xyz="0.6639999999999726 -0.7249998890417921 0.7237001112115311" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2057_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2057_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2081_1">
+  <inertial>
+    <origin xyz="0.6439476452361242 -0.7186190778892653 0.7113367717696345" rpy="0 0 0"/>
+    <mass value="0.12708834065854363"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="7e-06" iyz="1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2081_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2081_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2040_1">
+  <inertial>
+    <origin xyz="0.6337580531584974 -0.721357594723692 0.7102001227705077" rpy="0 0 0"/>
+    <mass value="0.010153597210911984"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2040_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2040_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2080_1">
+  <inertial>
+    <origin xyz="0.6576192067358907 -0.7049475164016714 0.7090634737895646" rpy="0 0 0"/>
+    <mass value="0.12708834076569056"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="7e-06" iyz="-3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2080_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2080_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2041_1">
+  <inertial>
+    <origin xyz="0.6603577122728954 -0.6947579007622474 0.7102001227701992" rpy="0 0 0"/>
+    <mass value="0.010153632411816148"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2041_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2041_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2062_1">
+  <inertial>
+    <origin xyz="0.6639999998748016 -0.7249998901257859 0.8210001102527061" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2062_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2062_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2061_1">
+  <inertial>
+    <origin xyz="0.6639999998749134 -0.7249998901194931 0.8345001102588872" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2061_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2061_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2096_1">
+  <inertial>
+    <origin xyz="0.6640000000000394 -0.7249998886441893 0.8345001116090642" rpy="0 0 0"/>
+    <mass value="0.009534474363757865"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2096_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2096_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2060_1">
+  <inertial>
+    <origin xyz="0.6639999999999714 -0.7249998890417921 0.8480001112115311" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2060_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2060_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2082_1">
+  <inertial>
+    <origin xyz="0.6576192067354946 -0.7049475164029291 0.8333634737887006" rpy="0 0 0"/>
+    <mass value="0.12708834076569184"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="7e-06" iyz="-3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2082_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2082_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2043_1">
+  <inertial>
+    <origin xyz="0.6603577122726252 -0.6947579007630938 0.8345001227696218" rpy="0 0 0"/>
+    <mass value="0.010153632411821083"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2043_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2043_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2083_1">
+  <inertial>
+    <origin xyz="0.643918909251762 -0.7187100948227557 0.8356367575495871" rpy="0 0 0"/>
+    <mass value="0.12708835366313287"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="7e-06" iyz="1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2083_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2083_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2042_1">
+  <inertial>
+    <origin xyz="0.6337418434045672 -0.7214947915820394 0.8345001116089199" rpy="0 0 0"/>
+    <mass value="0.010153597188588189"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2042_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2042_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2063_1">
+  <inertial>
+    <origin xyz="0.663999999999975 -0.7249998890417918 0.21600011121153087" rpy="0 0 0"/>
+    <mass value="0.003332385502432926"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2063_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2063_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2097_1">
+  <inertial>
+    <origin xyz="0.664000000000041 -0.724999888644189 0.20250011160906428" rpy="0 0 0"/>
+    <mass value="0.009534474363757919"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2097_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2097_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2064_1">
+  <inertial>
+    <origin xyz="0.6639999998749171 -0.7249998901194927 0.20250011025888678" rpy="0 0 0"/>
+    <mass value="0.0033323855024331634"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2064_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2064_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2065_1">
+  <inertial>
+    <origin xyz="0.6639999998748052 -0.7249998901257858 0.18900011025270555" rpy="0 0 0"/>
+    <mass value="0.0033323855024331634"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2065_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2065_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2085_1">
+  <inertial>
+    <origin xyz="0.6439476452387864 -0.7186190778887069 0.20363677176753242" rpy="0 0 0"/>
+    <mass value="0.12708834065854138"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="7e-06" iyz="1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2085_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2085_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2044_1">
+  <inertial>
+    <origin xyz="0.6337580531611259 -0.7213575947231707 0.20250012276840793" rpy="0 0 0"/>
+    <mass value="0.010153597210912363"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2044_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2044_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2084_1">
+  <inertial>
+    <origin xyz="0.6576192067358562 -0.7049475164021871 0.20136347378908429" rpy="0 0 0"/>
+    <mass value="0.1270883407656899"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="7e-06" iyz="-3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2084_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2084_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2045_1">
+  <inertial>
+    <origin xyz="0.6603577122731004 -0.6947579007623392 0.20250012276990284" rpy="0 0 0"/>
+    <mass value="0.010153632411819501"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2045_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2045_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2032_1">
+  <inertial>
+    <origin xyz="0.5975000000000518 -0.6521121926099831 0.12700011160906627" rpy="0 0 0"/>
+    <mass value="0.544019380993141"/>
+    <inertia ixx="0.000568" iyy="0.000501" izz="0.001065" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2032_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2032_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2034_1">
+  <inertial>
+    <origin xyz="0.5975000000000439 -0.6364296336720169 0.06562446699817029" rpy="0 0 0"/>
+    <mass value="1.190293566798911"/>
+    <inertia ixx="0.001942" iyy="0.001448" izz="0.000831" ixy="0.0" iyz="0.000429" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2034_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2034_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2144_1">
+  <inertial>
+    <origin xyz="-0.6275000000032834 -0.6932651076937272 0.4625001116090662" rpy="0 0 0"/>
+    <mass value="3.0991156007623237"/>
+    <inertia ixx="0.114554" iyy="0.114754" izz="0.000891" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2144_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2144_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2071_1">
+  <inertial>
+    <origin xyz="-0.6640000001251883 -0.7249998901257615 0.7090001102527198" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2071_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2071_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2070_1">
+  <inertial>
+    <origin xyz="-0.6640000001250763 -0.7249998901194679 0.7225001102589006" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2070_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2070_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2099_1">
+  <inertial>
+    <origin xyz="-0.6639999999999523 -0.7249998886441769 0.722500111609061" rpy="0 0 0"/>
+    <mass value="0.009534474363757714"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2099_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2099_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2069_1">
+  <inertial>
+    <origin xyz="-0.6640000000000184 -0.7249998890417666 0.7360001112115446" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2069_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2069_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2089_1">
+  <inertial>
+    <origin xyz="-0.6576192037388779 -0.704947530805296 0.7236367606894964" rpy="0 0 0"/>
+    <mass value="0.1270883406585439"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="-7e-06" iyz="3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2089_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2089_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2048_1">
+  <inertial>
+    <origin xyz="-0.6603577205756339 -0.6947579387278485 0.7225001116924605" rpy="0 0 0"/>
+    <mass value="0.01015359721091183"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2048_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2048_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2088_1">
+  <inertial>
+    <origin xyz="-0.6439476420730911 -0.7186190922136962 0.7213634626100058" rpy="0 0 0"/>
+    <mass value="0.12708834065854677"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="-7e-06" iyz="-1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2088_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2088_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2049_1">
+  <inertial>
+    <origin xyz="-0.6337580499953795 -0.7213576090481497 0.7225001116090866" rpy="0 0 0"/>
+    <mass value="0.01015359721091421"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2049_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2049_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2018_1">
+  <inertial>
+    <origin xyz="-0.6320269799062934 -0.6707467007876443 0.779462742136619" rpy="0 0 0"/>
+    <mass value="0.0606053015268515"/>
+    <inertia ixx="2.7e-05" iyy="2.9e-05" izz="8e-06" ixy="2e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2018_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2018_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2050_1">
+  <inertial>
+    <origin xyz="-0.6603577205756481 -0.6977579387406786 0.8345001116924423" rpy="0 0 0"/>
+    <mass value="0.010153597210912064"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2050_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2050_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2091_1">
+  <inertial>
+    <origin xyz="-0.6576192037388924 -0.7079475308181258 0.835636760689479" rpy="0 0 0"/>
+    <mass value="0.1270883406585405"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="-7e-06" iyz="3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2091_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2091_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2100_1">
+  <inertial>
+    <origin xyz="-0.6639999999999608 -0.7279998886569949 0.8345001116090606" rpy="0 0 0"/>
+    <mass value="0.009534474363757749"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2100_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2100_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2073_1">
+  <inertial>
+    <origin xyz="-0.6640000001250895 -0.7279998901322977 0.8345001102588837" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2073_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2073_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2072_1">
+  <inertial>
+    <origin xyz="-0.6640000000000328 -0.727999889054597 0.8480001112115275" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2072_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2072_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2074_1">
+  <inertial>
+    <origin xyz="-0.6640000001252016 -0.7279998901385906 0.8210001102527026" rpy="0 0 0"/>
+    <mass value="0.00333238550243316"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2074_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2074_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2090_1">
+  <inertial>
+    <origin xyz="-0.6439476420656632 -0.7216190922111823 0.8333634626178922" rpy="0 0 0"/>
+    <mass value="0.12708834065854097"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="-7e-06" iyz="-1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2090_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2090_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2051_1">
+  <inertial>
+    <origin xyz="-0.6337580499879587 -0.7243576090456335 0.8345001116169902" rpy="0 0 0"/>
+    <mass value="0.010153597210912226"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2051_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2051_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2016_1">
+  <inertial>
+    <origin xyz="-0.6267410523280613 -0.6678440986463205 0.8658280311609963" rpy="0 0 0"/>
+    <mass value="0.05471560282420835"/>
+    <inertia ixx="3.4e-05" iyy="3.9e-05" izz="9e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2016_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2016_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2012_1">
+  <inertial>
+    <origin xyz="-0.6264303906731445 -0.673399888656942 0.8810213786994678" rpy="0 0 0"/>
+    <mass value="0.0009377536261239442"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2012_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2012_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2020_1">
+  <inertial>
+    <origin xyz="-0.649172779426077 -0.6441886758716966 0.8650118152823402" rpy="0 0 0"/>
+    <mass value="0.05915965237410061"/>
+    <inertia ixx="4e-06" iyy="4e-06" izz="5e-06" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2020_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2020_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2066_1">
+  <inertial>
+    <origin xyz="-0.6640000000000249 -0.7249998890417733 0.2160001112115456" rpy="0 0 0"/>
+    <mass value="0.003332385502433155"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2066_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2066_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2098_1">
+  <inertial>
+    <origin xyz="-0.663999999999959 -0.7249998886441766 0.20250011160906126" rpy="0 0 0"/>
+    <mass value="0.009534474363757635"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2098_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2098_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2067_1">
+  <inertial>
+    <origin xyz="-0.6640000001250819 -0.7249998901194745 0.20250011025890147" rpy="0 0 0"/>
+    <mass value="0.003332385502433155"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2067_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2067_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2068_1">
+  <inertial>
+    <origin xyz="-0.6640000001251949 -0.7249998901257682 0.18900011025272023" rpy="0 0 0"/>
+    <mass value="0.003332385502432931"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2068_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2068_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2087_1">
+  <inertial>
+    <origin xyz="-0.6576192037388846 -0.7049475308053033 0.20363676068949682" rpy="0 0 0"/>
+    <mass value="0.12708834065853644"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="-7e-06" iyz="3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2087_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2087_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2046_1">
+  <inertial>
+    <origin xyz="-0.6603577205756406 -0.6947579387278553 0.20250011169246082" rpy="0 0 0"/>
+    <mass value="0.010153597210910694"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2046_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2046_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2086_1">
+  <inertial>
+    <origin xyz="-0.6439476420730884 -0.7186190922136972 0.20136346261000548" rpy="0 0 0"/>
+    <mass value="0.12708834065855357"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="-7e-06" iyz="-1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2086_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2086_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2047_1">
+  <inertial>
+    <origin xyz="-0.6337580499953895 -0.7213576090481537 0.2025001116090938" rpy="0 0 0"/>
+    <mass value="0.010153597210911856"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2047_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2047_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2033_1">
+  <inertial>
+    <origin xyz="-0.5975000000113941 -0.6521121926099802 0.1270001116090609" rpy="0 0 0"/>
+    <mass value="0.5440193809931534"/>
+    <inertia ixx="0.000568" iyy="0.000501" izz="0.001065" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2033_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2033_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2010_1">
+  <inertial>
+    <origin xyz="-0.5674933432005025 -0.6185007451716764 0.1228380584654704" rpy="0 0 0"/>
+    <mass value="0.011673875640365932"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2010_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2010_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2008_1">
+  <inertial>
+    <origin xyz="-0.5675000000115673 -0.6184998886479697 0.12020011160906095" rpy="0 0 0"/>
+    <mass value="0.00182929159688045"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2008_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2008_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2011_1">
+  <inertial>
+    <origin xyz="-0.627493667099437 -0.6185019944277017 0.12283841382422081" rpy="0 0 0"/>
+    <mass value="0.011674430918473786"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2011_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2011_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2009_1">
+  <inertial>
+    <origin xyz="-0.627500000011572 -0.6184998886479381 0.1202001116090608" rpy="0 0 0"/>
+    <mass value="0.0018292915968804208"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2009_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2009_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2037_1">
+  <inertial>
+    <origin xyz="-0.5975000000114035 -0.6364296336720142 0.06562446699816492" rpy="0 0 0"/>
+    <mass value="1.1902935667989103"/>
+    <inertia ixx="0.001942" iyy="0.001448" izz="0.000831" ixy="0.0" iyz="0.000429" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2037_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2037_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2021_1">
+  <inertial>
+    <origin xyz="0.5975000000000537 0.5295001113430462 0.12700011160906471" rpy="0 0 0"/>
+    <mass value="0.6058381309931401"/>
+    <inertia ixx="0.000786" iyy="0.000558" izz="0.00134" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2021_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2021_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2035_1">
+  <inertial>
+    <origin xyz="0.5975000000000467 0.5515703663189593 0.06562446699816829" rpy="0 0 0"/>
+    <mass value="1.19029356679891"/>
+    <inertia ixx="0.001942" iyy="0.001448" izz="0.000831" ixy="-0.0" iyz="0.000429" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2035_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2035_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2022_1">
+  <inertial>
+    <origin xyz="-0.5975000000113914 0.5170001113430581 0.12700011160906113" rpy="0 0 0"/>
+    <mass value="0.6058381309931402"/>
+    <inertia ixx="0.000786" iyy="0.000558" izz="0.00134" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2022_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2022_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2036_1">
+  <inertial>
+    <origin xyz="-0.5975000000113981 0.5390703663189722 0.06562446699816518" rpy="0 0 0"/>
+    <mass value="1.190293566798911"/>
+    <inertia ixx="0.001942" iyy="0.001448" izz="0.000831" ixy="-0.0" iyz="0.000429" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2036_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2036_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2015_1">
+  <inertial>
+    <origin xyz="-0.6267410523218441 0.5388443213326021 0.8658280311609956" rpy="0 0 0"/>
+    <mass value="0.05471560279645166"/>
+    <inertia ixx="3.4e-05" iyy="3.9e-05" izz="9e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2015_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2015_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2019_1">
+  <inertial>
+    <origin xyz="-0.649172779426074 0.5151884397451688 0.8650351491113991" rpy="0 0 0"/>
+    <mass value="0.059159652374100986"/>
+    <inertia ixx="4e-06" iyy="4e-06" izz="5e-06" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2019_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2019_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2125_1">
+  <inertial>
+    <origin xyz="-0.6275000000032748 -0.6932651076937262 1.3750001116090622" rpy="0 0 0"/>
+    <mass value="5.405976085542479"/>
+    <inertia ixx="0.606793" iyy="0.607141" izz="0.001554" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2125_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2125_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="nut_1_1">
+  <inertial>
+    <origin xyz="-0.6414999999998007 -0.7223164281437736 1.8825001116090772" rpy="0 0 0"/>
+    <mass value="0.0029250940611078914"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/nut_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/nut_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2092_1">
+  <inertial>
+    <origin xyz="-0.6439476420731021 -0.7216190922265237 1.894363462609985" rpy="0 0 0"/>
+    <mass value="0.1270883406585454"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="-7e-06" iyz="-1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2092_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2092_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2053_1">
+  <inertial>
+    <origin xyz="-0.6337580499954032 -0.7243576090609719 1.895500111609069" rpy="0 0 0"/>
+    <mass value="0.010153597210908057"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2053_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2053_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2076_1">
+  <inertial>
+    <origin xyz="-0.6639999999999633 -0.727999888656997 1.895500111609061" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2076_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2076_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2101_1">
+  <inertial>
+    <origin xyz="-0.6639999999999635 -0.727999888656995 1.8955001116090606" rpy="0 0 0"/>
+    <mass value="0.009534474363757242"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2101_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2101_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2075_1">
+  <inertial>
+    <origin xyz="-0.6639999999999634 -0.727999888656997 1.9090001116090611" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2075_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2075_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2077_1">
+  <inertial>
+    <origin xyz="-0.6639999999999633 -0.727999888656997 1.8820001116090612" rpy="0 0 0"/>
+    <mass value="0.0033323855024329227"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2077_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2077_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2093_1">
+  <inertial>
+    <origin xyz="-0.6576192037388947 -0.7079475308181267 1.8966367606894803" rpy="0 0 0"/>
+    <mass value="0.127088340658533"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="-7e-06" iyz="3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2093_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2093_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2052_1">
+  <inertial>
+    <origin xyz="-0.6603577205756508 -0.6977579387406788 1.8955001116924444" rpy="0 0 0"/>
+    <mass value="0.010153597210912163"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2052_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2052_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2131_1">
+  <inertial>
+    <origin xyz="-0.6442545143263501 -0.3679998886441506 1.9106257068916035" rpy="0 0 0"/>
+    <mass value="0.12027039558673767"/>
+    <inertia ixx="6.5e-05" iyy="4.4e-05" izz="0.000104" ixy="0.0" iyz="-0.0" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2131_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2131_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2127_1">
+  <inertial>
+    <origin xyz="-0.6275000000004954 -0.06449988865694228 1.9325001116080307" rpy="0 0 0"/>
+    <mass value="7.1798850343474"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2127_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2127_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2132_1">
+  <inertial>
+    <origin xyz="-0.6442545143263484 0.252000111343049 1.910625706891603" rpy="0 0 0"/>
+    <mass value="0.12027039558673859"/>
+    <inertia ixx="6.5e-05" iyy="4.4e-05" izz="0.000104" ixy="0.0" iyz="-0.0" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2132_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2132_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2129_1">
+  <inertial>
+    <origin xyz="-0.6275000000005878 0.5695001113422247 1.3750001116091224" rpy="0 0 0"/>
+    <mass value="6.810029958989774"/>
+    <inertia ixx="0.764943" iyy="0.764943" izz="0.002624" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2129_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2129_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2123_1">
+  <inertial>
+    <origin xyz="0.6275000000033244 -0.6932651076936993 1.3750001116089954" rpy="0 0 0"/>
+    <mass value="5.40597608554405"/>
+    <inertia ixx="0.606793" iyy="0.607141" izz="0.001554" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2123_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2123_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2056_1">
+  <inertial>
+    <origin xyz="0.6640000000057118 -0.7249998891689539 1.8820001110785296" rpy="0 0 0"/>
+    <mass value="0.003332385502432899"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2056_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2056_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2055_1">
+  <inertial>
+    <origin xyz="0.6640000024614882 -0.7249998895028407 1.8955001082501797" rpy="0 0 0"/>
+    <mass value="0.0033323855024329422"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2055_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2055_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2094_1">
+  <inertial>
+    <origin xyz="0.6640000000000407 -0.7249998886441932 1.8955001116090628" rpy="0 0 0"/>
+    <mass value="0.009534474363758526"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2094_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2094_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2054_1">
+  <inertial>
+    <origin xyz="0.663999999606619 -0.7249998891767975 1.9090001114760746" rpy="0 0 0"/>
+    <mass value="0.0033323855024329527"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2054_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2054_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2078_1">
+  <inertial>
+    <origin xyz="0.6576192035728868 -0.7049475307261213 1.8943634626281207" rpy="0 0 0"/>
+    <mass value="0.12708834076569103"/>
+    <inertia ixx="5.9e-05" iyy="2.8e-05" izz="3.9e-05" ixy="7e-06" iyz="-3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2078_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2078_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2039_1">
+  <inertial>
+    <origin xyz="0.6603577091101269 -0.6947579150862818 1.8955001116089374" rpy="0 0 0"/>
+    <mass value="0.010153632411820534"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2039_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2039_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2079_1">
+  <inertial>
+    <origin xyz="0.6439189129218336 -0.7187100934409255 1.8966367606591559" rpy="0 0 0"/>
+    <mass value="0.1270883349674619"/>
+    <inertia ixx="2.8e-05" iyy="5.9e-05" izz="3.9e-05" ixy="7e-06" iyz="1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2079_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2079_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2038_1">
+  <inertial>
+    <origin xyz="0.6337418434045655 -0.7214947915818231 1.8955001116091188" rpy="0 0 0"/>
+    <mass value="0.010153597188594566"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2038_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2038_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2133_1">
+  <inertial>
+    <origin xyz="0.6439545143264249 -0.36799988864415334 1.9106257068916062" rpy="0 0 0"/>
+    <mass value="0.12027039558673328"/>
+    <inertia ixx="6.5e-05" iyy="4.4e-05" izz="0.000104" ixy="-0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2133_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2133_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2128_1">
+  <inertial>
+    <origin xyz="0.6274999999994443 -0.06449988865696427 1.9325001116099148" rpy="0 0 0"/>
+    <mass value="7.17988503434784"/>
+    <inertia ixx="0.896314" iyy="0.002767" izz="0.896314" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2128_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2128_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2134_1">
+  <inertial>
+    <origin xyz="0.6439545143264267 0.2520001113430456 1.9106257068916062" rpy="0 0 0"/>
+    <mass value="0.12027039558673332"/>
+    <inertia ixx="6.5e-05" iyy="4.4e-05" izz="0.000104" ixy="-0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2134_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2134_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2107_1">
+  <inertial>
+    <origin xyz="0.022499999999986274 -0.7075104172416522 1.9017751116239179" rpy="0 0 0"/>
+    <mass value="0.002844955724109856"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2107_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2107_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2115_1">
+  <inertial>
+    <origin xyz="0.022500000001128694 -0.6975709918109455 1.9035312608878514" rpy="0 0 0"/>
+    <mass value="0.05790609297729357"/>
+    <inertia ixx="2e-06" iyy="7e-06" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2115_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2115_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2124_1">
+  <inertial>
+    <origin xyz="3.778045184831056e-14 -0.6932651076937459 1.932500111612422" rpy="0 0 0"/>
+    <mass value="5.6389922962666885"/>
+    <inertia ixx="0.001621" iyy="0.688996" izz="0.688633" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2124_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2124_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2114_1">
+  <inertial>
+    <origin xyz="-0.022499999998362146 -0.6975709918107234 1.9035312608877615" rpy="0 0 0"/>
+    <mass value="0.05790609297905071"/>
+    <inertia ixx="2e-06" iyy="7e-06" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2114_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2114_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2106_1">
+  <inertial>
+    <origin xyz="-0.02250000000001369 -0.7075104172416532 1.9017751116239183" rpy="0 0 0"/>
+    <mass value="0.002844955724109085"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2106_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2106_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2130_1">
+  <inertial>
+    <origin xyz="0.6274999999994426 0.5695001113438962 1.3750001116090453" rpy="0 0 0"/>
+    <mass value="6.810029958988866"/>
+    <inertia ixx="0.764943" iyy="0.764943" izz="0.002624" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2130_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2130_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2126_1">
+  <inertial>
+    <origin xyz="4.8805875156807644e-14 0.5695001113424765 1.9325001116099847" rpy="0 0 0"/>
+    <mass value="7.103565733083153"/>
+    <inertia ixx="0.002737" iyy="0.868063" izz="0.868063" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2126_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find frame_assembly_description)/meshes/Component2126_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 768" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component2148_1"/>
+</joint>
+
+<joint name="Rigid 769" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2148_1"/>
+  <child link="Component2014_1"/>
+</joint>
+
+<joint name="Rigid 770" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2014_1"/>
+  <child link="Component2137_1"/>
+</joint>
+
+<joint name="Rigid 771" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2148_1"/>
+  <child link="Component2029_1"/>
+</joint>
+
+<joint name="Rigid 772" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2029_1"/>
+  <child link="Component2136_1"/>
+</joint>
+
+<joint name="Rigid 773" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2136_1"/>
+  <child link="Component2151_1"/>
+</joint>
+
+<joint name="Rigid 774" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2151_1"/>
+  <child link="Component2122_1"/>
+</joint>
+
+<joint name="Rigid 775" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2122_1"/>
+  <child link="Component2156_1"/>
+</joint>
+
+<joint name="Rigid 776" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2156_1"/>
+  <child link="Component2138_1"/>
+</joint>
+
+<joint name="Rigid 777" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2138_1"/>
+  <child link="Component2146_1"/>
+</joint>
+
+<joint name="Rigid 778" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2146_1"/>
+  <child link="nase_nut_1_1"/>
+</joint>
+
+<joint name="Rigid 779" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="nase_nut_1_1"/>
+  <child link="base_screw_1_1"/>
+</joint>
+
+<joint name="Rigid 780" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="nase_nut_1_1"/>
+  <child link="Component2118_1"/>
+</joint>
+
+<joint name="Rigid 781" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2118_1"/>
+  <child link="base_nut_2_1"/>
+</joint>
+
+<joint name="Rigid 782" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="base_nut_2_1"/>
+  <child link="Component2007_1"/>
+</joint>
+
+<joint name="Rigid 783" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="base_nut_2_1"/>
+  <child link="Component2145_1"/>
+</joint>
+
+<joint name="Rigid 784" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2145_1"/>
+  <child link="Component2139_1"/>
+</joint>
+
+<joint name="Rigid 785" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2139_1"/>
+  <child link="Component2155_1"/>
+</joint>
+
+<joint name="Rigid 786" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2007_1"/>
+  <child link="Component2017_1"/>
+</joint>
+
+<joint name="Rigid 787" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2155_1"/>
+  <child link="Component2121_1"/>
+</joint>
+
+<joint name="Rigid 788" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2121_1"/>
+  <child link="Component2150_1"/>
+</joint>
+
+<joint name="Rigid 789" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2118_1"/>
+  <child link="Component2135_1"/>
+</joint>
+
+<joint name="Rigid 790" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2135_1"/>
+  <child link="Component2154_1"/>
+</joint>
+
+<joint name="Rigid 791" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2154_1"/>
+  <child link="Component2147_1"/>
+</joint>
+
+<joint name="Rigid 792" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2147_1"/>
+  <child link="Component2149_1"/>
+</joint>
+
+<joint name="Rigid 793" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2147_1"/>
+  <child link="Component2119_1"/>
+</joint>
+
+<joint name="Rigid 794" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2119_1"/>
+  <child link="Component2153_1"/>
+</joint>
+
+<joint name="Rigid 795" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2147_1"/>
+  <child link="Component2120_1"/>
+</joint>
+
+<joint name="Rigid 796" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2120_1"/>
+  <child link="Component2152_1"/>
+</joint>
+
+<joint name="Rigid 797" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2017_1"/>
+  <child link="Component2141_1"/>
+</joint>
+
+<joint name="Rigid 798" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2141_1"/>
+  <child link="Component2117_1"/>
+</joint>
+
+<joint name="Rigid 799" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2117_1"/>
+  <child link="Component2109_1"/>
+</joint>
+
+<joint name="Rigid 800" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2141_1"/>
+  <child link="Component2116_1"/>
+</joint>
+
+<joint name="Rigid 801" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2116_1"/>
+  <child link="Component2108_1"/>
+</joint>
+
+<joint name="Rigid 802" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2141_1"/>
+  <child link="Component2110_1"/>
+</joint>
+
+<joint name="Rigid 803" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2110_1"/>
+  <child link="Component2102_1"/>
+</joint>
+
+<joint name="Rigid 804" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2110_1"/>
+  <child link="Component2112_1"/>
+</joint>
+
+<joint name="Rigid 805" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2112_1"/>
+  <child link="Component2104_1"/>
+</joint>
+
+<joint name="Rigid 806" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2104_1"/>
+  <child link="Component2026_1"/>
+</joint>
+
+<joint name="Rigid 807" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2026_1"/>
+  <child link="Component2024_1"/>
+</joint>
+
+<joint name="Rigid 808" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2024_1"/>
+  <child link="Component2140_1"/>
+</joint>
+
+<joint name="Rigid 809" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2140_1"/>
+  <child link="Component2028_1"/>
+</joint>
+
+<joint name="Rigid 810" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2140_1"/>
+  <child link="Component2027_1"/>
+</joint>
+
+<joint name="Rigid 811" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2028_1"/>
+  <child link="Component2025_1"/>
+</joint>
+
+<joint name="Rigid 812" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2025_1"/>
+  <child link="Component2023_1"/>
+</joint>
+
+<joint name="Rigid 813" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2025_1"/>
+  <child link="Component2105_1"/>
+</joint>
+
+<joint name="Rigid 814" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2105_1"/>
+  <child link="Component2113_1"/>
+</joint>
+
+<joint name="Rigid 815" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2113_1"/>
+  <child link="Component2111_1"/>
+</joint>
+
+<joint name="Rigid 816" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2111_1"/>
+  <child link="Component2103_1"/>
+</joint>
+
+<joint name="Rigid 817" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2111_1"/>
+  <child link="Component2142_1"/>
+</joint>
+
+<joint name="Rigid 818" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2027_1"/>
+  <child link="Component2030_1"/>
+</joint>
+
+<joint name="Rigid 819" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2028_1"/>
+  <child link="Component2031_1"/>
+</joint>
+
+<joint name="Rigid 820" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2030_1"/>
+  <child link="Component2143_1"/>
+</joint>
+
+<joint name="Rigid 821" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2143_1"/>
+  <child link="Component2059_1"/>
+</joint>
+
+<joint name="Rigid 822" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2059_1"/>
+  <child link="Component2058_1"/>
+</joint>
+
+<joint name="Rigid 823" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2058_1"/>
+  <child link="Component2095_1"/>
+</joint>
+
+<joint name="Rigid 824" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2095_1"/>
+  <child link="Component2057_1"/>
+</joint>
+
+<joint name="Rigid 825" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2095_1"/>
+  <child link="Component2081_1"/>
+</joint>
+
+<joint name="Rigid 826" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2081_1"/>
+  <child link="Component2040_1"/>
+</joint>
+
+<joint name="Rigid 827" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2095_1"/>
+  <child link="Component2080_1"/>
+</joint>
+
+<joint name="Rigid 828" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2080_1"/>
+  <child link="Component2041_1"/>
+</joint>
+
+<joint name="Rigid 829" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2057_1"/>
+  <child link="Component2062_1"/>
+</joint>
+
+<joint name="Rigid 830" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2062_1"/>
+  <child link="Component2061_1"/>
+</joint>
+
+<joint name="Rigid 831" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2061_1"/>
+  <child link="Component2096_1"/>
+</joint>
+
+<joint name="Rigid 832" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2096_1"/>
+  <child link="Component2060_1"/>
+</joint>
+
+<joint name="Rigid 833" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2096_1"/>
+  <child link="Component2082_1"/>
+</joint>
+
+<joint name="Rigid 834" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2082_1"/>
+  <child link="Component2043_1"/>
+</joint>
+
+<joint name="Rigid 835" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2096_1"/>
+  <child link="Component2083_1"/>
+</joint>
+
+<joint name="Rigid 836" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2083_1"/>
+  <child link="Component2042_1"/>
+</joint>
+
+<joint name="Rigid 837" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2143_1"/>
+  <child link="Component2063_1"/>
+</joint>
+
+<joint name="Rigid 838" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2063_1"/>
+  <child link="Component2097_1"/>
+</joint>
+
+<joint name="Rigid 839" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2097_1"/>
+  <child link="Component2064_1"/>
+</joint>
+
+<joint name="Rigid 840" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2064_1"/>
+  <child link="Component2065_1"/>
+</joint>
+
+<joint name="Rigid 841" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2097_1"/>
+  <child link="Component2085_1"/>
+</joint>
+
+<joint name="Rigid 842" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2085_1"/>
+  <child link="Component2044_1"/>
+</joint>
+
+<joint name="Rigid 843" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2097_1"/>
+  <child link="Component2084_1"/>
+</joint>
+
+<joint name="Rigid 844" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2084_1"/>
+  <child link="Component2045_1"/>
+</joint>
+
+<joint name="Rigid 845" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2045_1"/>
+  <child link="Component2032_1"/>
+</joint>
+
+<joint name="Rigid 846" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2032_1"/>
+  <child link="Component2034_1"/>
+</joint>
+
+<joint name="Rigid 847" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2031_1"/>
+  <child link="Component2144_1"/>
+</joint>
+
+<joint name="Rigid 848" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2144_1"/>
+  <child link="Component2071_1"/>
+</joint>
+
+<joint name="Rigid 849" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2071_1"/>
+  <child link="Component2070_1"/>
+</joint>
+
+<joint name="Rigid 850" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2070_1"/>
+  <child link="Component2099_1"/>
+</joint>
+
+<joint name="Rigid 851" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2099_1"/>
+  <child link="Component2069_1"/>
+</joint>
+
+<joint name="Rigid 852" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2099_1"/>
+  <child link="Component2089_1"/>
+</joint>
+
+<joint name="Rigid 853" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2089_1"/>
+  <child link="Component2048_1"/>
+</joint>
+
+<joint name="Rigid 854" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2099_1"/>
+  <child link="Component2088_1"/>
+</joint>
+
+<joint name="Rigid 855" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2088_1"/>
+  <child link="Component2049_1"/>
+</joint>
+
+<joint name="Rigid 856" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2048_1"/>
+  <child link="Component2018_1"/>
+</joint>
+
+<joint name="Rigid 857" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2018_1"/>
+  <child link="Component2050_1"/>
+</joint>
+
+<joint name="Rigid 858" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2050_1"/>
+  <child link="Component2091_1"/>
+</joint>
+
+<joint name="Rigid 859" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2091_1"/>
+  <child link="Component2100_1"/>
+</joint>
+
+<joint name="Rigid 860" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2100_1"/>
+  <child link="Component2073_1"/>
+</joint>
+
+<joint name="Rigid 861" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2100_1"/>
+  <child link="Component2072_1"/>
+</joint>
+
+<joint name="Rigid 862" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2073_1"/>
+  <child link="Component2074_1"/>
+</joint>
+
+<joint name="Rigid 863" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2100_1"/>
+  <child link="Component2090_1"/>
+</joint>
+
+<joint name="Rigid 864" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2090_1"/>
+  <child link="Component2051_1"/>
+</joint>
+
+<joint name="Rigid 865" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2050_1"/>
+  <child link="Component2016_1"/>
+</joint>
+
+<joint name="Rigid 866" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2016_1"/>
+  <child link="Component2012_1"/>
+</joint>
+
+<joint name="Rigid 867" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2016_1"/>
+  <child link="Component2020_1"/>
+</joint>
+
+<joint name="Rigid 868" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2144_1"/>
+  <child link="Component2066_1"/>
+</joint>
+
+<joint name="Rigid 869" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2066_1"/>
+  <child link="Component2098_1"/>
+</joint>
+
+<joint name="Rigid 870" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2098_1"/>
+  <child link="Component2067_1"/>
+</joint>
+
+<joint name="Rigid 871" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2067_1"/>
+  <child link="Component2068_1"/>
+</joint>
+
+<joint name="Rigid 872" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2098_1"/>
+  <child link="Component2087_1"/>
+</joint>
+
+<joint name="Rigid 873" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2087_1"/>
+  <child link="Component2046_1"/>
+</joint>
+
+<joint name="Rigid 874" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2098_1"/>
+  <child link="Component2086_1"/>
+</joint>
+
+<joint name="Rigid 875" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2086_1"/>
+  <child link="Component2047_1"/>
+</joint>
+
+<joint name="Rigid 876" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2046_1"/>
+  <child link="Component2033_1"/>
+</joint>
+
+<joint name="Rigid 877" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2033_1"/>
+  <child link="Component2010_1"/>
+</joint>
+
+<joint name="Rigid 878" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2010_1"/>
+  <child link="Component2008_1"/>
+</joint>
+
+<joint name="Rigid 879" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2033_1"/>
+  <child link="Component2011_1"/>
+</joint>
+
+<joint name="Rigid 880" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2011_1"/>
+  <child link="Component2009_1"/>
+</joint>
+
+<joint name="Rigid 881" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2033_1"/>
+  <child link="Component2037_1"/>
+</joint>
+
+<joint name="Rigid 882" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2153_1"/>
+  <child link="Component2021_1"/>
+</joint>
+
+<joint name="Rigid 883" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2021_1"/>
+  <child link="Component2035_1"/>
+</joint>
+
+<joint name="Rigid 884" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2152_1"/>
+  <child link="Component2022_1"/>
+</joint>
+
+<joint name="Rigid 885" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2022_1"/>
+  <child link="Component2036_1"/>
+</joint>
+
+<joint name="Rigid 886" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2152_1"/>
+  <child link="Component2015_1"/>
+</joint>
+
+<joint name="Rigid 887" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2015_1"/>
+  <child link="Component2019_1"/>
+</joint>
+
+<joint name="Rigid 888" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2012_1"/>
+  <child link="Component2125_1"/>
+</joint>
+
+<joint name="Rigid 889" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2125_1"/>
+  <child link="nut_1_1"/>
+</joint>
+
+<joint name="Rigid 890" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="nut_1_1"/>
+  <child link="Component2092_1"/>
+</joint>
+
+<joint name="Rigid 891" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2092_1"/>
+  <child link="Component2053_1"/>
+</joint>
+
+<joint name="Rigid 892" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2092_1"/>
+  <child link="Component2076_1"/>
+</joint>
+
+<joint name="Rigid 893" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2076_1"/>
+  <child link="Component2101_1"/>
+</joint>
+
+<joint name="Rigid 894" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2076_1"/>
+  <child link="Component2075_1"/>
+</joint>
+
+<joint name="Rigid 895" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2101_1"/>
+  <child link="Component2077_1"/>
+</joint>
+
+<joint name="Rigid 896" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2076_1"/>
+  <child link="Component2093_1"/>
+</joint>
+
+<joint name="Rigid 897" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2093_1"/>
+  <child link="Component2052_1"/>
+</joint>
+
+<joint name="Rigid 898" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2052_1"/>
+  <child link="Component2131_1"/>
+</joint>
+
+<joint name="Rigid 899" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2131_1"/>
+  <child link="Component2127_1"/>
+</joint>
+
+<joint name="Rigid 900" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2127_1"/>
+  <child link="Component2132_1"/>
+</joint>
+
+<joint name="Rigid 901" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2015_1"/>
+  <child link="Component2129_1"/>
+</joint>
+
+<joint name="Rigid 902" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2060_1"/>
+  <child link="Component2123_1"/>
+</joint>
+
+<joint name="Rigid 903" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2123_1"/>
+  <child link="Component2056_1"/>
+</joint>
+
+<joint name="Rigid 904" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2056_1"/>
+  <child link="Component2055_1"/>
+</joint>
+
+<joint name="Rigid 905" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2055_1"/>
+  <child link="Component2094_1"/>
+</joint>
+
+<joint name="Rigid 906" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2094_1"/>
+  <child link="Component2054_1"/>
+</joint>
+
+<joint name="Rigid 907" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2094_1"/>
+  <child link="Component2078_1"/>
+</joint>
+
+<joint name="Rigid 908" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2078_1"/>
+  <child link="Component2039_1"/>
+</joint>
+
+<joint name="Rigid 909" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2094_1"/>
+  <child link="Component2079_1"/>
+</joint>
+
+<joint name="Rigid 910" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2079_1"/>
+  <child link="Component2038_1"/>
+</joint>
+
+<joint name="Rigid 911" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2039_1"/>
+  <child link="Component2133_1"/>
+</joint>
+
+<joint name="Rigid 912" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2133_1"/>
+  <child link="Component2128_1"/>
+</joint>
+
+<joint name="Rigid 913" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2128_1"/>
+  <child link="Component2134_1"/>
+</joint>
+
+<joint name="Rigid 914" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2038_1"/>
+  <child link="Component2107_1"/>
+</joint>
+
+<joint name="Rigid 915" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2107_1"/>
+  <child link="Component2115_1"/>
+</joint>
+
+<joint name="Rigid 916" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2115_1"/>
+  <child link="Component2124_1"/>
+</joint>
+
+<joint name="Rigid 917" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2124_1"/>
+  <child link="Component2114_1"/>
+</joint>
+
+<joint name="Rigid 918" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2114_1"/>
+  <child link="Component2106_1"/>
+</joint>
+
+<joint name="Rigid 919" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2134_1"/>
+  <child link="Component2130_1"/>
+</joint>
+
+<joint name="Rigid 920" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component2134_1"/>
+  <child link="Component2126_1"/>
+</joint>
+
+</robot>

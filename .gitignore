@@ -1,0 +1,39 @@
+# ROS 2 build outputs
+build/
+install/
+log/
+
+# Colcon
+.colcon/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# IDEs
+.idea/
+
+# Linux temp files
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Cache
+.cache/
+tmp/

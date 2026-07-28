@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ur5_sim_package
+    relative_path: urdf/ur.urdf.xacro
+    xacro_args: ur_type:=ur5 sim_gazebo:=true
+  srdf:
+    relative_path: config/group4_ur5.srdf
+  package_settings:
+    author_name: jrsat
+    author_email: jrsat@todo.todo
+    generated_timestamp: 0

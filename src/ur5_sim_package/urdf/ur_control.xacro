@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <!--
+    Simulation control definitions for the custom UR5 and gripper.
+
+    The arm and gripper interfaces are kept in separate macros for clarity,
+    but are inserted into one ros2_control system. Gazebo therefore exposes
+    one controller manager containing arm_controller, gripper_controller, and
+    joint_state_broadcaster, matching config/controllers.yaml and MoveIt.
+  -->
+
+  <xacro:include filename="$(find ur5_sim_package)/urdf/inc/ur_joint_control.xacro"/>
+  <xacro:include filename="$(find ur5_sim_package)/urdf/inc/ur_sensors.xacro"/>
+
+  <xacro:macro name="ur_arm_control" params="
+    tf_prefix
+    initial_positions
+    ">
+    <xacro:ur_joint_control_description
+      tf_prefix="${tf_prefix}"
+      initial_positions="${initial_positions}"
+    />
+    <xacro:ur_sensors tf_prefix="${tf_prefix}"/>
+  </xacro:macro>
+
+  <xacro:macro name="gripper_control" params="
+    tf_prefix
+    initial_position:=0.01
+    ">
+    <joint name="${tf_prefix}left_finger_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <!-- Start clear of the inner hard stop. -->
+        <param name="initial_value">${initial_position}</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="${tf_prefix}right_finger_joint">
+      <!--
+        The physical joint remains a mimic of the left finger. Both command
+        interfaces receive the same target to avoid Fortress's unstable,
+        hard-coded mimic velocity loop at this small scale.
+      -->
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">${initial_position}</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="ur_gazebo_control" params="
+    name
+    tf_prefix
+    controller_params_file
+    initial_positions:=${dict(shoulder_pan_joint=0.0,shoulder_lift_joint=-1.57,elbow_joint=0.0,wrist_1_joint=-1.57,wrist_2_joint=0.0,wrist_3_joint=0.0)}
+    gripper_initial_position:=0.01
+    ">
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+
+      <xacro:ur_arm_control
+        tf_prefix="${tf_prefix}"
+        initial_positions="${initial_positions}"
+      />
+      <xacro:gripper_control
+        tf_prefix="${tf_prefix}"
+        initial_position="${gripper_initial_position}"
+      />
+    </ros2_control>
+
+    <gazebo>
+      <plugin
+        filename="gz_ros2_control-system"
+        name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <robot_param>robot_description</robot_param>
+        <robot_param_node>robot_state_publisher</robot_param_node>
+        <parameters>${controller_params_file}</parameters>
+        <controller_manager_name>controller_manager</controller_manager_name>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>
