@@ -110,12 +110,16 @@
           <color rgba="0.65 0.65 0.68 1.0"/>
         </material>
       </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <collision name="left_slider_collision">
+        <origin xyz="0.0157 -0.065 0.0075" rpy="0 0 0"/>
         <geometry>
-          <mesh
-            filename="package://ur5_sim_package/meshes/gripper/gripper_finger_assembly.STL"
-            scale="0.001 0.001 0.001"/>
+          <box size="0.0306 0.080 0.015"/>
+        </geometry>
+      </collision>
+      <collision name="left_contact_pad">
+        <origin xyz="0.0414 -0.01275 0.0785" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.025 0.0255 0.117"/>
         </geometry>
       </collision>
       <inertial>
@@ -134,13 +138,8 @@
            type="prismatic">
       <parent link="${prefix}gripper_base_link"/>
       <child link="${prefix}left_finger_link"/>
-      <!-- Original position of the supplied finger assembly -->
-      <origin
-        xyz="-0.00122 0.097 0.0686"
-        rpy="0 0 0"/>
-      <!-- Finger slides along its local positive Y-axis -->
+      <origin xyz="-0.00125 0.025 0.0686" rpy="0 0 0"/>
       <axis xyz="0 1 0"/> 
-      <!-- Travel is in metres -->
       <limit
         lower="0.0"
         upper="0.035"
@@ -168,12 +167,16 @@
           <color rgba="0.65 0.65 0.68 1.0"/>
         </material>
       </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+      <collision name="right_slider_collision">
+        <origin xyz="0.0157 -0.065 0.0075" rpy="0 0 0"/>
         <geometry>
-          <mesh
-            filename="package://ur5_sim_package/meshes/gripper/gripper_finger_assembly.STL"
-            scale="0.001 0.001 0.001"/>
+          <box size="0.0306 0.080 0.015"/>
+        </geometry>
+      </collision>
+      <collision name="right_contact_pad">
+        <origin xyz="0.0414 -0.01275 0.0785" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.025 0.0255 0.117"/>
         </geometry>
       </collision>
       <inertial>
@@ -192,11 +195,7 @@
            type="prismatic">
       <parent link="${prefix}gripper_base_link"/>
       <child link="${prefix}right_finger_link"/>
-      <!--Opposite side of the gripper, 180-degree Z rotation -->
-      <origin
-        xyz="0.08129 -0.097 0.0687"
-        rpy="0 0 3.14159265"/>
-      <!--right finger frame is rotated by 180 degrees-->
+      <origin xyz="0.08129 -0.025 0.0687" rpy="0 0 3.14159265"/>
       <axis xyz="0 1 0"/>
       <limit
         lower="0.0"
@@ -206,13 +205,24 @@
       <dynamics
         damping="2.0"
         friction="0.2"/> 
-      <!--The right finger follows the left. Multiplier of +1 is used because the right joint frame rotated by 180 degrees.-->
+      <!-- Mirror the left finger. -->
       <mimic
         joint="${prefix}left_finger_joint"
         multiplier="1.0"
         offset="0.0"/> 
     </joint>
 
+    <!-- Keep the fingers in place until the controller starts. -->
+    <gazebo reference="${prefix}left_finger_link">
+      <gravity>false</gravity>
+      <mu1>1.5</mu1>
+      <mu2>1.5</mu2>
+    </gazebo>
+    <gazebo reference="${prefix}right_finger_link">
+      <gravity>false</gravity>
+      <mu1>1.5</mu1>
+      <mu2>1.5</mu2>
+    </gazebo>
 
     <!-- ====================================================== -->
     <!-- End-effector tool-centre-point frame                    -->
@@ -226,7 +236,6 @@
         xyz="0 0 0.19"
         rpy="0 0 0"/>
     </joint>
-
 
   </xacro:macro>
 </robot>

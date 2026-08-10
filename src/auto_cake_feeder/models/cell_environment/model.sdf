@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="cell_environment">
+    <static>true</static>
+
+    <link name="environment">
+      <visual name="cell_frame_visual">
+        <geometry>
+          <mesh>
+            <uri>model://auto_cake_feeder/meshes/environment/cell_frame.STL</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.92 0.90 0.84 1</ambient>
+          <diffuse>0.92 0.90 0.84 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="ground_collision">
+        <pose>0 0 -0.01 0 0 0</pose>
+        <geometry><box><size>4 4 0.02</size></box></geometry>
+      </collision>
+      <visual name="ground_visual">
+        <pose>0 0 -0.01 0 0 0</pose>
+        <geometry><box><size>4 4 0.02</size></box></geometry>
+        <material><diffuse>0.30 0.32 0.35 1</diffuse></material>
+      </visual>
+
+      <collision name="worktop_collision">
+        <pose>0 -0.042 0.790 0 0 0</pose>
+        <geometry><box><size>1.50 1.50 0.010</size></box></geometry>
+      </collision>
+
+      <collision name="rear_frame_collision">
+        <pose>0 0.683 1.375 0 0 0</pose>
+        <geometry><box><size>1.30 0.050 1.16</size></box></geometry>
+      </collision>
+      <collision name="left_frame_collision">
+        <pose>-0.625 -0.042 1.375 0 0 0</pose>
+        <geometry><box><size>0.050 1.40 1.16</size></box></geometry>
+      </collision>
+      <collision name="right_frame_collision">
+        <pose>0.625 -0.042 1.375 0 0 0</pose>
+        <geometry><box><size>0.050 1.40 1.16</size></box></geometry>
+      </collision>
+
+      <!-- Leave 5 mm below the fixed mount so Gazebo does not bind the base. -->
+      <collision name="robot_support_collision">
+        <pose>0 -1.059 0.4975 0 0 0</pose>
+        <geometry><box><size>0.076 0.076 0.995</size></box></geometry>
+      </collision>
+
+      <collision name="shelf_left_side">
+        <pose>-0.407 -0.647 1.085 0 0 0</pose>
+        <geometry><box><size>0.200 0.010 0.580</size></box></geometry>
+      </collision>
+      <visual name="shelf_left_side_visual">
+        <pose>-0.407 -0.647 1.085 0 0 0</pose>
+        <geometry><box><size>0.200 0.010 0.580</size></box></geometry>
+        <material><diffuse>0.50 0.28 0.12 1</diffuse></material>
+      </visual>
+      <collision name="shelf_right_side">
+        <pose>-0.407 -0.337 1.085 0 0 0</pose>
+        <geometry><box><size>0.200 0.010 0.580</size></box></geometry>
+      </collision>
+      <visual name="shelf_right_side_visual">
+        <pose>-0.407 -0.337 1.085 0 0 0</pose>
+        <geometry><box><size>0.200 0.010 0.580</size></box></geometry>
+        <material><diffuse>0.50 0.28 0.12 1</diffuse></material>
+      </visual>
+      <collision name="shelf_back">
+        <pose>-0.502 -0.492 1.085 0 0 0</pose>
+        <geometry><box><size>0.010 0.320 0.580</size></box></geometry>
+      </collision>
+      <visual name="shelf_back_visual">
+        <pose>-0.502 -0.492 1.085 0 0 0</pose>
+        <geometry><box><size>0.010 0.320 0.580</size></box></geometry>
+        <material><diffuse>0.50 0.28 0.12 1</diffuse></material>
+      </visual>
+
+      <collision name="shelf_bottom">
+        <pose>-0.407 -0.492 0.797 0 0 0</pose>
+        <geometry><box><size>0.200 0.320 0.004</size></box></geometry>
+      </collision>
+      <visual name="shelf_bottom_visual">
+        <pose>-0.407 -0.492 0.797 0 0 0</pose>
+        <geometry><box><size>0.200 0.320 0.004</size></box></geometry>
+        <material><diffuse>0.50 0.28 0.12 1</diffuse></material>
+      </visual>
+
+      <collision name="cooling_tray_collision">
+        <pose>-0.407 -0.492 1.380 0 0 0</pose>
+        <geometry><box><size>0.180 0.320 0.003</size></box></geometry>
+      </collision>
+      <visual name="cooling_tray_visual">
+        <pose>-0.407 -0.492 1.380 0 0 0</pose>
+        <geometry><box><size>0.180 0.320 0.003</size></box></geometry>
+        <material><diffuse>0.62 0.64 0.67 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>

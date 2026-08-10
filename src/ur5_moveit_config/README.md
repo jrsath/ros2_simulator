@@ -11,7 +11,7 @@ This package uses the custom robot description from `ur5_sim_package`.
 - IK solver: KDL
 - Planning pipeline: OMPL
 - Arm execution controller: `arm_controller/follow_joint_trajectory`
-- Gripper execution controller: `gripper_controller/follow_joint_trajectory`
+- Gripper execution controller: `gripper_controller/gripper_cmd`
 
 ## Launch
 

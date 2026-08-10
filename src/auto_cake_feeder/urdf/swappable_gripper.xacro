@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="swappable_parallel_gripper" params="
+    parent
+    prefix:=''
+    finger_mesh
+    finger_mesh_origin_xyz
+    finger_mesh_origin_rpy
+    finger_collision_origin_xyz
+    finger_collision_size
+    finger_mass
+    closed_position
+    open_position
+    tcp_xyz
+  ">
+    <link name="${prefix}gripper_adapter_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://auto_cake_feeder/meshes/gripper/UR5_Dovetail_adapter.STL"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="adapter_grey">
+          <color rgba="0.35 0.35 0.35 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://auto_cake_feeder/meshes/gripper/UR5_Dovetail_adapter.STL"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0.0375 0.013 0.0375"/>
+        <mass value="0.25"/>
+        <inertia ixx="0.00020" ixy="0" ixz="0"
+                 iyy="0.00020" iyz="0" izz="0.00020"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}tool_to_gripper_adapter" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${prefix}gripper_adapter_link"/>
+      <origin xyz="-0.0375 0.0375 0" rpy="1.570796327 0 0"/>
+    </joint>
+
+    <link name="${prefix}gripper_base_link">
+      <visual>
+        <origin xyz="-0.049105502 1.112505127 -0.721048890"
+                rpy="1.570796327 0 0"/>
+        <geometry>
+          <mesh filename="package://auto_cake_feeder/meshes/gripper/Gripper_assembly_base.STL"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="gripper_body">
+          <color rgba="0.15 0.15 0.18 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0.0395 0 0.0365"/>
+        <geometry>
+          <box size="0.079 0.180 0.073"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0.0395 0 0.0365"/>
+        <mass value="0.80"/>
+        <inertia ixx="0.0025" ixy="0" ixz="0"
+                 iyy="0.0020" iyz="0" izz="0.0030"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}adapter_to_gripper_base" type="fixed">
+      <parent link="${prefix}gripper_adapter_link"/>
+      <child link="${prefix}gripper_base_link"/>
+      <origin xyz="0.077 0.0142 0.0378" rpy="-1.570796327 -3.141592654 0"/>
+    </joint>
+
+    <xacro:macro name="moving_finger" params="side joint_origin joint_rpy">
+      <link name="${prefix}${side}_finger_link">
+        <visual name="${side}_carriage_visual">
+          <origin xyz="-0.666015758 1.254942185 -0.883335638"
+                  rpy="1.570796327 0 -0.000000418"/>
+          <geometry>
+            <mesh filename="package://auto_cake_feeder/meshes/gripper/gripper_finger_mount_assembly.STL"
+                  scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="carriage_metal">
+            <color rgba="0.55 0.55 0.58 1.0"/>
+          </material>
+        </visual>
+        <visual name="${side}_replaceable_finger_visual">
+          <origin xyz="${finger_mesh_origin_xyz}" rpy="${finger_mesh_origin_rpy}"/>
+          <geometry>
+            <mesh filename="${finger_mesh}" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="replaceable_finger">
+            <color rgba="0.85 0.55 0.12 1.0"/>
+          </material>
+        </visual>
+        <collision name="${side}_carriage_collision">
+          <origin xyz="0.027155 -0.0525 0.0185"/>
+          <geometry>
+            <box size="0.0535 0.105 0.037"/>
+          </geometry>
+        </collision>
+        <collision name="${side}_finger_collision">
+          <origin xyz="${finger_collision_origin_xyz}"/>
+          <geometry>
+            <box size="${finger_collision_size}"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <origin xyz="0.027 -0.045 0.060"/>
+          <mass value="${0.16 + float(finger_mass)}"/>
+          <inertia ixx="0.00075" ixy="0" ixz="0"
+                   iyy="0.00050" iyz="0" izz="0.00060"/>
+        </inertial>
+      </link>
+      <joint name="${prefix}${side}_finger_joint" type="prismatic">
+        <parent link="${prefix}gripper_base_link"/>
+        <child link="${prefix}${side}_finger_link"/>
+        <origin xyz="${joint_origin}" rpy="${joint_rpy}"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="${closed_position}" upper="${open_position}"
+               effort="50.0" velocity="0.08"/>
+        <dynamics damping="2.0" friction="0.2"/>
+        <xacro:if value="${side == 'right'}">
+          <mimic joint="${prefix}left_finger_joint" multiplier="1.0" offset="0.0"/>
+        </xacro:if>
+      </joint>
+      <gazebo reference="${prefix}${side}_finger_link">
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
+      </gazebo>
+    </xacro:macro>
+
+    <xacro:moving_finger side="left"
+                         joint_origin="-0.00125 0.025 0.0686"
+                         joint_rpy="0 0 0"/>
+    <xacro:moving_finger side="right"
+                         joint_origin="0.08129 -0.025 0.0687"
+                         joint_rpy="0 0 3.141592654"/>
+
+    <link name="${prefix}gripper_tcp"/>
+    <joint name="${prefix}gripper_tcp_joint" type="fixed">
+      <parent link="${prefix}gripper_base_link"/>
+      <child link="${prefix}gripper_tcp"/>
+      <origin xyz="${tcp_xyz}"/>
+    </joint>
+  </xacro:macro>
+</robot>

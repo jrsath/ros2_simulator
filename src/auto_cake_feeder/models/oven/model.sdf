@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="oven">
+    <self_collide>true</self_collide>
+
+    <link name="oven_body">
+      <inertial>
+        <mass>30.0</mass>
+        <inertia>
+          <ixx>0.68</ixx><iyy>0.87</iyy><izz>0.99</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="bottom"><pose>0 0 0.015 0 0 0</pose><geometry><box><size>0.465 0.370 0.030</size></box></geometry></collision>
+      <visual name="bottom_visual"><pose>0 0 0.015 0 0 0</pose><geometry><box><size>0.465 0.370 0.030</size></box></geometry><material><diffuse>0.78 0.80 0.82 1</diffuse></material></visual>
+
+      <collision name="top"><pose>0 0 0.355 0 0 0</pose><geometry><box><size>0.465 0.370 0.030</size></box></geometry></collision>
+      <visual name="top_visual"><pose>0 0 0.355 0 0 0</pose><geometry><box><size>0.465 0.370 0.030</size></box></geometry><material><diffuse>0.78 0.80 0.82 1</diffuse></material></visual>
+
+      <collision name="left"><pose>-0.2225 0 0.185 0 0 0</pose><geometry><box><size>0.020 0.370 0.370</size></box></geometry></collision>
+      <visual name="left_visual"><pose>-0.2225 0 0.185 0 0 0</pose><geometry><box><size>0.020 0.370 0.370</size></box></geometry><material><diffuse>0.78 0.80 0.82 1</diffuse></material></visual>
+
+      <collision name="right"><pose>0.2225 0 0.185 0 0 0</pose><geometry><box><size>0.020 0.370 0.370</size></box></geometry></collision>
+      <visual name="right_visual"><pose>0.2225 0 0.185 0 0 0</pose><geometry><box><size>0.020 0.370 0.370</size></box></geometry><material><diffuse>0.78 0.80 0.82 1</diffuse></material></visual>
+
+      <collision name="back"><pose>0 0.175 0.185 0 0 0</pose><geometry><box><size>0.425 0.020 0.340</size></box></geometry></collision>
+      <visual name="back_visual"><pose>0 0.175 0.185 0 0 0</pose><geometry><box><size>0.425 0.020 0.340</size></box></geometry><material><diffuse>0.30 0.32 0.35 1</diffuse></material></visual>
+
+      <collision name="front_panel"><pose>0 -0.180 0.080 0 0 0</pose><geometry><box><size>0.425 0.010 0.160</size></box></geometry></collision>
+      <visual name="front_panel_visual"><pose>0 -0.180 0.080 0 0 0</pose><geometry><box><size>0.425 0.010 0.160</size></box></geometry><material><diffuse>0.74 0.76 0.78 1</diffuse></material></visual>
+
+      <collision name="front_left_pillar"><pose>-0.2025 -0.180 0.2475 0 0 0</pose><geometry><box><size>0.060 0.010 0.175</size></box></geometry></collision>
+      <visual name="front_left_pillar_visual"><pose>-0.2025 -0.180 0.2475 0 0 0</pose><geometry><box><size>0.060 0.010 0.175</size></box></geometry><material><diffuse>0.74 0.76 0.78 1</diffuse></material></visual>
+      <collision name="front_right_pillar"><pose>0.2025 -0.180 0.2475 0 0 0</pose><geometry><box><size>0.060 0.010 0.175</size></box></geometry></collision>
+      <visual name="front_right_pillar_visual"><pose>0.2025 -0.180 0.2475 0 0 0</pose><geometry><box><size>0.060 0.010 0.175</size></box></geometry><material><diffuse>0.74 0.76 0.78 1</diffuse></material></visual>
+
+      <collision name="oven_bed"><pose>0 0.005 0.080 0 0 0</pose><geometry><box><size>0.300 0.280 0.010</size></box></geometry></collision>
+      <visual name="oven_bed_visual"><pose>0 0.005 0.080 0 0 0</pose><geometry><box><size>0.300 0.280 0.010</size></box></geometry><material><diffuse>0.15 0.16 0.17 1</diffuse></material></visual>
+    </link>
+
+    <joint name="oven_mount" type="fixed">
+      <parent>world</parent>
+      <child>oven_body</child>
+    </joint>
+
+    <link name="oven_door">
+      <pose>-0.1725 -0.190 0.2475 0 0 0</pose>
+      <inertial>
+        <mass>0.35</mass>
+        <inertia><ixx>0.0009</ixx><iyy>0.0044</iyy><izz>0.0035</izz></inertia>
+      </inertial>
+      <collision name="door_panel">
+        <pose>0.1725 0 0 0 0 0</pose>
+        <geometry><box><size>0.345 0.008 0.175</size></box></geometry>
+      </collision>
+      <visual name="door_panel_visual">
+        <pose>0.1725 0 0 0 0 0</pose>
+        <geometry><box><size>0.345 0.008 0.175</size></box></geometry>
+        <material><diffuse>0.20 0.28 0.34 0.45</diffuse></material>
+        <transparency>0.45</transparency>
+      </visual>
+      <collision name="door_handle">
+        <pose>0.2925 -0.030 0 0 0 0</pose>
+        <geometry><box><size>0.060 0.050 0.025</size></box></geometry>
+      </collision>
+      <visual name="door_handle_visual">
+        <pose>0.2925 -0.030 0 0 0 0</pose>
+        <geometry><box><size>0.060 0.050 0.025</size></box></geometry>
+        <material><diffuse>0.08 0.08 0.09 1</diffuse></material>
+      </visual>
+    </link>
+
+    <joint name="oven_door_joint" type="revolute">
+      <parent>oven_body</parent>
+      <child>oven_door</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit><lower>-1.80</lower><upper>0.03</upper><effort>30</effort><velocity>1.0</velocity></limit>
+        <dynamics><damping>0.25</damping><friction>0.05</friction></dynamics>
+      </axis>
+    </joint>
+
+    <link name="start_button">
+      <!-- Start 9 mm clear of the front panel so the joint can travel 8 mm. -->
+      <pose>0.120 -0.204 0.080 0 0 0</pose>
+      <inertial>
+        <mass>0.02</mass>
+        <inertia><ixx>0.0000013</ixx><iyy>0.0000013</iyy><izz>0.0000013</izz></inertia>
+      </inertial>
+      <collision name="button_collision"><geometry><box><size>0.030 0.020 0.020</size></box></geometry></collision>
+      <visual name="button_visual"><geometry><box><size>0.030 0.020 0.020</size></box></geometry><material><diffuse>0.85 0.03 0.03 1</diffuse></material></visual>
+    </link>
+
+    <joint name="start_button_joint" type="prismatic">
+      <parent>oven_body</parent>
+      <child>start_button</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit><lower>0</lower><upper>0.008</upper><effort>20</effort><velocity>0.05</velocity></limit>
+        <dynamics><damping>2.0</damping><spring_reference>0</spring_reference><spring_stiffness>30</spring_stiffness></dynamics>
+      </axis>
+    </joint>
+
+    <plugin filename="libignition-gazebo6-joint-state-publisher-system.so"
+            name="ignition::gazebo::systems::JointStatePublisher">
+      <topic>/oven/joint_state</topic>
+    </plugin>
+  </model>
+</sdf>

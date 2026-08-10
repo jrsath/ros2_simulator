@@ -1,32 +1,28 @@
 <?xml version="1.0"?>
 <robot name="group4_ur5">
-  <!-- A chain is required for MoveIt's end-effector interactive marker. -->
   <group name="ur_manipulator">
     <chain base_link="base_link" tip_link="gripper_tcp"/>
   </group>
 
   <group name="gripper">
     <joint name="left_finger_joint"/>
-    <joint name="right_finger_joint"/>
   </group>
 
   <group_state name="home" group="ur_manipulator">
     <joint name="shoulder_pan_joint" value="0.0"/>
-    <joint name="shoulder_lift_joint" value="-1.57"/>
-    <joint name="elbow_joint" value="0.0"/>
-    <joint name="wrist_1_joint" value="-1.57"/>
-    <joint name="wrist_2_joint" value="0.0"/>
+    <joint name="shoulder_lift_joint" value="-1.2"/>
+    <joint name="elbow_joint" value="-1.0"/>
+    <joint name="wrist_1_joint" value="-1.2"/>
+    <joint name="wrist_2_joint" value="-1.0"/>
     <joint name="wrist_3_joint" value="0.0"/>
   </group_state>
 
   <group_state name="open" group="gripper">
     <joint name="left_finger_joint" value="0.035"/>
-    <joint name="right_finger_joint" value="0.035"/>
   </group_state>
 
   <group_state name="closed" group="gripper">
     <joint name="left_finger_joint" value="0.0"/>
-    <joint name="right_finger_joint" value="0.0"/>
   </group_state>
 
   <end_effector

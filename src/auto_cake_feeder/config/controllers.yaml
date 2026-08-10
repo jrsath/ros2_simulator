@@ -1,0 +1,63 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    gripper_controller:
+      type: effort_controllers/GripperActionController
+
+joint_state_broadcaster:
+  ros__parameters:
+    joints:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+      - left_finger_joint
+    interfaces:
+      - position
+      - velocity
+      - effort
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+    command_interfaces:
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+    gains:
+      shoulder_pan_joint:  {p: 300.0, i: 20.0,  d: 5.0, i_clamp: 25.0, ff_velocity: 1.0}
+      shoulder_lift_joint: {p: 400.0, i: 100.0, d: 10.0, i_clamp: 50.0, ff_velocity: 1.0}
+      elbow_joint:         {p: 300.0, i: 80.0,  d: 8.0, i_clamp: 35.0, ff_velocity: 1.0}
+      wrist_1_joint:       {p: 80.0,  i: 20.0,  d: 2.0, i_clamp: 8.0, ff_velocity: 1.0}
+      wrist_2_joint:       {p: 60.0,  i: 15.0,  d: 1.5, i_clamp: 6.0, ff_velocity: 1.0}
+      wrist_3_joint:       {p: 30.0,  i: 5.0,   d: 1.0, i_clamp: 3.0, ff_velocity: 1.0}
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+
+gripper_controller:
+  ros__parameters:
+    joint: left_finger_joint
+    goal_tolerance: 0.0005
+    max_effort: 50.0
+    allow_stalling: true
+    stall_velocity_threshold: 0.0002
+    stall_timeout: 0.75
+    gains:
+      left_finger_joint: {p: 1000.0, i: 0.0, d: 20.0, i_clamp: 0.0}
+    action_monitor_rate: 20.0

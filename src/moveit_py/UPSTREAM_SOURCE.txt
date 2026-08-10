@@ -1,0 +1,2 @@
+Upstream: https://github.com/moveit/moveit2/tree/humble/moveit_py
+Commit: 2b2030dd73881aceeaa759e5622c57c99adf2f9c

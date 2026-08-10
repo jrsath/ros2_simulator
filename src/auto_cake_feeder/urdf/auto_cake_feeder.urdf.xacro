@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="auto_cake_feeder_ur5">
+  <xacro:include filename="$(find ur5_sim_package)/urdf/ur_macro.xacro"/>
+  <xacro:include filename="$(find ur5_sim_package)/urdf/ur_control.xacro"/>
+  <xacro:include filename="$(find auto_cake_feeder)/urdf/swappable_gripper.xacro"/>
+
+  <xacro:arg name="ur_type" default="ur5"/>
+  <xacro:arg name="tf_prefix" default=""/>
+  <xacro:arg name="joint_limit_params"
+             default="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
+  <xacro:arg name="kinematics_params"
+             default="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
+  <xacro:arg name="physical_params"
+             default="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>
+  <xacro:arg name="visual_params"
+             default="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml"/>
+
+  <xacro:arg name="finger_mesh"
+             default="package://auto_cake_feeder/meshes/gripper/sample_finger.STL"/>
+  <xacro:arg name="finger_mesh_origin_xyz" default="0.053905 0.0 0.137005"/>
+  <xacro:arg name="finger_mesh_origin_rpy" default="3.141592654 0.0 -1.570796327"/>
+  <xacro:arg name="finger_collision_origin_xyz" default="0.041405 -0.0125 0.076005"/>
+  <xacro:arg name="finger_collision_size" default="0.025 0.025 0.122"/>
+  <xacro:arg name="finger_mass" default="0.040"/>
+  <xacro:arg name="gripper_closed_position" default="0.0"/>
+  <xacro:arg name="gripper_open_position" default="0.035"/>
+  <xacro:arg name="gripper_tcp_xyz" default="0.041405 0.0 0.137005"/>
+
+  <link name="world"/>
+
+  <!-- Fixed 76 x 76 x 1000 mm beam under the UR5. -->
+  <link name="arm_support_beam">
+    <visual>
+      <geometry><box size="0.076 0.076 1.000"/></geometry>
+      <material name="support_black"><color rgba="0.04 0.04 0.05 1.0"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.076 0.076 1.000"/></geometry>
+    </collision>
+  </link>
+  <joint name="world_to_arm_support" type="fixed">
+    <parent link="world"/>
+    <child link="arm_support_beam"/>
+    <origin xyz="0 -1.059 0.500" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Mount the UR5 on top of the support beam. -->
+  <xacro:ur_robot
+    name="auto_cake_feeder_ur5"
+    tf_prefix="$(arg tf_prefix)"
+    parent="world"
+    joint_limits_parameters_file="$(arg joint_limit_params)"
+    kinematics_parameters_file="$(arg kinematics_params)"
+    physical_parameters_file="$(arg physical_params)"
+    visual_parameters_file="$(arg visual_params)"
+    safety_limits="false"
+    safety_pos_margin="0.15"
+    safety_k_position="20"
+    force_abs_paths="true"
+    sim_gazebo="true">
+    <origin xyz="0 -1.059 1.000" rpy="0 0 0"/>
+  </xacro:ur_robot>
+
+  <!-- Add the parallel gripper to tool0. -->
+  <xacro:swappable_parallel_gripper
+    parent="$(arg tf_prefix)tool0"
+    prefix="$(arg tf_prefix)"
+    finger_mesh="$(arg finger_mesh)"
+    finger_mesh_origin_xyz="$(arg finger_mesh_origin_xyz)"
+    finger_mesh_origin_rpy="$(arg finger_mesh_origin_rpy)"
+    finger_collision_origin_xyz="$(arg finger_collision_origin_xyz)"
+    finger_collision_size="$(arg finger_collision_size)"
+    finger_mass="$(arg finger_mass)"
+    closed_position="$(arg gripper_closed_position)"
+    open_position="$(arg gripper_open_position)"
+    tcp_xyz="$(arg gripper_tcp_xyz)"/>
+
+  <!-- Connect the arm and gripper joints to Gazebo controllers. -->
+  <xacro:ur_gazebo_control
+    name="AutoCakeFeederSystem"
+    tf_prefix="$(arg tf_prefix)"
+    controller_params_file="$(find auto_cake_feeder)/config/controllers.yaml"
+    initial_positions="${dict(shoulder_pan_joint=0.0, shoulder_lift_joint=-1.2, elbow_joint=-1.0, wrist_1_joint=-1.2, wrist_2_joint=-1.0, wrist_3_joint=0.0)}"
+    gripper_initial_position="$(arg gripper_open_position)"/>
+</robot>

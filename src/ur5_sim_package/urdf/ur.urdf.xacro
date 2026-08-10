@@ -44,10 +44,10 @@
      force_abs_paths="true"
      sim_gazebo="true"
      >
-     <origin xyz="0 0 0" rpy="0 0 0" />          <!-- position robot in the world -->
+     <origin xyz="0.30 0.20 0" rpy="0 0 1.5708" />
    </xacro:ur_robot>
 
-   <!-- Create and attach the gripper -->
+   <!-- Gripper assembly. -->
    <xacro:parallel_gripper
      parent="$(arg tf_prefix)tool0"
      prefix="$(arg tf_prefix)"/>
@@ -55,6 +55,7 @@
    <xacro:ur_gazebo_control
      name="UR5System"
      tf_prefix="$(arg tf_prefix)"
-     controller_params_file="$(find ur5_sim_package)/config/controllers.yaml"/>
+     controller_params_file="$(find ur5_sim_package)/config/controllers.yaml"
+     gripper_initial_position="0.035"/>
 
 </robot>

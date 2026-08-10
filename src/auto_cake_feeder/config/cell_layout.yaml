@@ -1,0 +1,44 @@
+# World coordinates use x left/right, y front/back and z up.
+frame:
+  centre_xyz: [0.0, -0.042, 0.977]
+  size_xyz: [1.500, 1.500, 1.954]
+  front_y: -0.792
+  inside_side_x: [-0.600, 0.600]
+  worktop_z: 0.795
+
+robot:
+  base_xyz: [0.0, -1.059, 1.000]
+  base_rpy: [0.0, 0.0, 0.0]
+  pedestal_size_xyz: [0.076, 0.076, 1.000]
+  beam_front_to_enclosure_front: 0.305
+
+oven:
+  centre_xyz: [0.335, -0.4395, 0.795]
+  yaw: -1.570796327
+  opening_faces: enclosure_centre
+  size_xyz: [0.465, 0.370, 0.370]
+  front_clearance: 0.120
+  side_clearance: 0.080
+  opening_xyz: [0.345, 0.010, 0.175]
+  door_bottom_offset: 0.160
+  door_top_offset: 0.035
+  bed_height: 0.080
+  button_world_xyz: [0.131, -0.5595, 0.875]
+  planned_tray_tcp_levels_z: [0.900, 1.000, 1.100]
+
+shelf:
+  centre_xyz: [-0.407, -0.492, 0.795]
+  yaw: 1.570796327
+  opening_faces: enclosure_centre
+  size_xyz: [0.320, 0.200, 0.580]
+  open_edge_x: -0.307
+  back_x: -0.502
+  bottom_z: 0.797
+  front_clearance: 0.140
+  side_clearance: 0.093
+  tray_thickness: 0.003
+  slot_spacing: 0.100
+
+cooling_tray:
+  centre_xyz: [-0.407, -0.492, 1.380]
+  size_xyz: [0.320, 0.180, 0.003]

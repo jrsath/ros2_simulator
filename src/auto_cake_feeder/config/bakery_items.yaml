@@ -1,0 +1,36 @@
+# Circular measurements are full diameters.
+items:
+  round_bun:
+    label: Round animal bun
+    dimensions_m: [0.095, 0.095, 0.065]
+    shape: cylinder
+    mass_kg: 0.090
+    colour: [0.82, 0.48, 0.19, 1.0]
+
+  cheese_roll:
+    label: Cheese roll
+    dimensions_m: [0.060, 0.060, 0.060]
+    shape: box
+    mass_kg: 0.060
+    colour: [1.0, 0.58, 0.12, 1.0]
+
+  croissant:
+    label: Croissant
+    dimensions_m: [0.060, 0.040, 0.050]
+    shape: box
+    mass_kg: 0.040
+    colour: [0.79, 0.43, 0.14, 1.0]
+
+  cupcake:
+    label: Cupcake
+    dimensions_m: [0.050, 0.050, 0.060]
+    shape: cylinder
+    mass_kg: 0.055
+    colour: [0.95, 0.32, 0.55, 1.0]
+
+  sweet_bun:
+    label: Large sweet bun
+    dimensions_m: [0.110, 0.110, 0.080]
+    shape: cylinder
+    mass_kg: 0.120
+    colour: [0.72, 0.38, 0.15, 1.0]

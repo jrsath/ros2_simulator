@@ -11,6 +11,7 @@ from moveit_configs_utils import MoveItConfigsBuilder
 import os
 
 
+# Return the Gazebo, MoveIt and RViz launch.
 def generate_launch_description():
     moveit_package = get_package_share_directory("ur5_moveit_config")
     simulation_package = get_package_share_directory("ur5_sim_package")
@@ -33,6 +34,10 @@ def generate_launch_description():
 
     launch_simulator = LaunchConfiguration("launch_simulator")
     launch_rviz = LaunchConfiguration("launch_rviz")
+    simulator_args = LaunchConfiguration("simulator_args")
+    scene_file = os.path.join(
+        moveit_package, "config", "planning_scene_objects.yaml"
+    )
 
     # Scope the included launch arguments so launch_rviz:=false only disables
     # the simulator package's basic RViz, not the MoveIt RViz below.
@@ -44,7 +49,10 @@ def generate_launch_description():
                 PythonLaunchDescriptionSource(
                     os.path.join(simulation_package, "launch", "ur5.launch.py")
                 ),
-                launch_arguments={"launch_rviz": "false"}.items(),
+                launch_arguments={
+                    "launch_rviz": "false",
+                    "simulator_args": simulator_args,
+                }.items(),
             ),
         ],
     )
@@ -53,6 +61,7 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
+        ros_arguments=["--log-level", "warn"],
         parameters=[
             moveit_config.to_dict(),
             {
@@ -68,11 +77,30 @@ def generate_launch_description():
         ],
     )
 
+    planning_scene_obstacles = Node(
+        package="ur5_moveit_config",
+        executable="planning_scene_obstacles.py",
+        name="planning_scene_obstacles",
+        output="screen",
+        ros_arguments=[
+            "--log-level",
+            "warn",
+            "--log-level",
+            "planning_scene_obstacles:=info",
+        ],
+        parameters=[
+            {
+                "scene_file": scene_file,
+            },
+        ],
+    )
+
     rviz = Node(
         package="rviz2",
         executable="rviz2",
         name="moveit_rviz",
         output="screen",
+        ros_arguments=["--log-level", "warn"],
         condition=IfCondition(launch_rviz),
         arguments=[
             "-d",
@@ -99,7 +127,15 @@ def generate_launch_description():
             default_value="true",
             description="Launch RViz with the MoveIt MotionPlanning panel.",
         ),
+        DeclareLaunchArgument(
+            "simulator_args",
+            default_value="empty.sdf",
+            description=(
+                "Gazebo arguments. Use '-s empty.sdf' for server-only mode."
+            ),
+        ),
         simulator,
         move_group,
+        planning_scene_obstacles,
         rviz,
     ])

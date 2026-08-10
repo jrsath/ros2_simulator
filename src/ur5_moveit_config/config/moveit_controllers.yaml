@@ -24,9 +24,10 @@ moveit_simple_controller_manager:
       - wrist_3_joint
 
   gripper_controller:
-    type: FollowJointTrajectory
-    action_ns: follow_joint_trajectory
+    type: GripperCommand
+    action_ns: gripper_cmd
     default: true
     joints:
       - left_finger_joint
-      - right_finger_joint
+    command_joint: left_finger_joint
+    max_effort: 20.0

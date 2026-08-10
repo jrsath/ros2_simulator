@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -o pipefail
+
+ros2 launch ur5_moveit_config pick_and_place.launch.py "$@" 2>&1 \
+  | grep --line-buffered --color=never -E \
+      '\[(WARN|WARNING|ERROR|FATAL)\]|\[Err\]|\[(pick_and_place_node|car_driver_node|planning_scene_obstacles)\]|Traceback|Exception|Segmentation fault|failed to terminate|terminate called'

@@ -18,6 +18,7 @@ xacro_file = os.path.join(
 )
 
 
+# Build the gripper robot description.
 def generate_robot_description():
     return ParameterValue(
         Command([
@@ -29,6 +30,7 @@ def generate_robot_description():
     )
 
 
+# Publish the gripper transforms.
 def generate_robot_state_publisher():
     robot_description = generate_robot_description()
 
@@ -43,6 +45,7 @@ def generate_robot_state_publisher():
     )
 
 
+# Start the gripper joint-state publisher.
 def generate_joint_state_publisher():
     robot_description = generate_robot_description()
 
@@ -57,6 +60,7 @@ def generate_joint_state_publisher():
     )
 
 
+# Start RViz for the gripper display.
 def generate_rviz_node():
     return Node(
         package="rviz2",
@@ -68,6 +72,7 @@ def generate_rviz_node():
     )
 
 
+# Return the complete gripper display launch.
 def generate_launch_description():
     return LaunchDescription([
         generate_robot_state_publisher(),

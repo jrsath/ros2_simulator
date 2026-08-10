@@ -10,6 +10,13 @@ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 find_package(ament_cmake REQUIRED)
 
 install(
+  PROGRAMS
+    scripts/measure_arm_tracking.py
+    scripts/measure_gripper_tracking.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
   DIRECTORY
     launch
     urdf

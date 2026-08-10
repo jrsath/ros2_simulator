@@ -1,0 +1,24 @@
+profiles:
+  sample:
+    description: Supplied straight sample finger on the standard Dynamixel carriage.
+    mesh: package://auto_cake_feeder/meshes/gripper/sample_finger.STL
+    mesh_origin_xyz: "0.053905 0.0 0.137005"
+    mesh_origin_rpy: "3.141592654 0.0 -1.570796327"
+    collision_origin_xyz: "0.041405 -0.0125 0.076005"
+    collision_size: "0.025 0.025 0.122"
+    finger_mass: 0.040
+    closed_position: 0.0
+    open_position: 0.035
+    tcp_xyz: "0.041405 0.0 0.137005"
+
+  custom:
+    description: Template profile for a replacement finger exported with the same mounting datum.
+    mesh: package://auto_cake_feeder/meshes/gripper/custom_finger.STL
+    mesh_origin_xyz: "0.053905 0.0 0.137005"
+    mesh_origin_rpy: "3.141592654 0.0 -1.570796327"
+    collision_origin_xyz: "0.041405 -0.0125 0.076005"
+    collision_size: "0.025 0.025 0.122"
+    finger_mass: 0.040
+    closed_position: 0.0
+    open_position: 0.035
+    tcp_xyz: "0.041405 0.0 0.137005"
